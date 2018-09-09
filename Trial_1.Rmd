@@ -101,3 +101,29 @@ name: part2
 
 Giving a slide a name can be easy within the HTML afterwards: you can refer to it without user numbers (which tend to change while you're working on a presentation)
 
+
+---
+
+layout: true
+
+background-image: url(images/pencil.jpg)
+background-size: cover
+
+
+---
+
+# A new chapter heading
+
+Some text
+
+
+---
+
+# Which gets repeated here
+
+Some more text
+
+---
+
+
+

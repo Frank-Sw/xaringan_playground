@@ -46,7 +46,7 @@ html <img> tags work as well, and this way you can have multiple images on a sli
 
 # alignment
 
-Use the class argument upfront to change the alingment of a complete slide.
+Use the class property upfront to change the alingment of a complete slide.
 
 If you only want to change a block of text, you can use content classes.
 
