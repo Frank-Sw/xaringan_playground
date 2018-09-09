@@ -55,18 +55,15 @@ And even add multiple more:
 
 ---
 
-# HTML tag images
+# Adding images HTML style
 
 I will add a picture here:
 
-<img src="https://raw.githubusercontent.com/suzanbaert/SatRdaysAmsterdam18_dplyr/master/images/coverslide.png" width="100">
+<img src="https://raw.githubusercontent.com/suzanbaert/xaringan_playground/master/images/database.png" width="100">
 
 And perhaps one more here:
 
-<img src="https://raw.githubusercontent.com/suzanbaert/SatRdaysAmsterdam18_dplyr/master/images/coverslide.png" width="100">
-
-
-
+<img src="https://raw.githubusercontent.com/suzanbaert/xaringan_playground/master/images/cloud.png" width="100">
 
 
 
@@ -98,4 +95,9 @@ completely on the right!]
 
 ---
 
+name: part2
+
+# Part 2
+
+Giving a slide a name can be easy within the HTML afterwards: you can refer to it without user numbers (which tend to change while you're working on a presentation)
 
