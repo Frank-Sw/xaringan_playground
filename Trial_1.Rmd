@@ -5,7 +5,6 @@ date: "Sept 1st, 2018"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    seal: false
     nature:
       highlightStyle: github
       highlightLines: true
@@ -23,4 +22,11 @@ background-size: cover
 
 ---
 
+class: inverse
+
 # Introduction
+
+Here's a second slide. Standard it's 4/3 ratio, but most projectors are widescreen these days...
+
+
+---

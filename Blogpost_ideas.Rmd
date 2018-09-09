@@ -1,0 +1,25 @@
+---
+title: "Blogpost"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+# Getting rid of the default coverpage
+
+The default cover page takes 
+
+- To change the background colour, font colour, font type etc --> CSS
+- If you want an image, you can set that up in css, but I found it faster to just do this:
+
+Add seal: false to your YAML header and set the very first slide as a picture. This will make the default disappear.
+
+
+
+# Changing from standard to widescreen slides
+
+Adding inside nature: ratio 16/9 will change the slide ratio :)
