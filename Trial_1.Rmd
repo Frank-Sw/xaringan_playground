@@ -1,0 +1,26 @@
+---
+title: "Getting more out of dplyr"
+author: "Suzan Baert"
+date: "Sept 1st, 2018"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    seal: false
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+background-image: url(images/coverslide.png)
+background-size: cover
+
+
+
+---
+
+# Introduction
