@@ -30,3 +30,72 @@ Here's a second slide. Standard it's 4/3 ratio, but most projectors are widescre
 
 
 ---
+
+background-image: url(images/database.png)
+background-size: 200px
+background-position: 0% 0%
+
+# Playing with images
+
+
+
+---
+
+# Adding markdown style images
+
+There is another way though:  
+This will add an image inline: ![](images/database_small.png)
+
+Or you can add them using the content classes:  
+.left[![](images/database_small.png)]
+
+And even add multiple more: 
+.center[![](images/database_small.png) ![](images/cloud_small.png) ![](images/graph_small.png)]
+
+
+---
+
+# HTML tag images
+
+I will add a picture here:
+
+<img src="https://raw.githubusercontent.com/suzanbaert/SatRdaysAmsterdam18_dplyr/master/images/coverslide.png" width="100">
+
+And perhaps one more here:
+
+<img src="https://raw.githubusercontent.com/suzanbaert/SatRdaysAmsterdam18_dplyr/master/images/coverslide.png" width="100">
+
+
+
+
+
+
+
+---
+
+
+class: center
+
+# Slide alignment
+
+By changing the css class to center at the start of the slide,  
+the entire text  
+will be 
+centered.
+
+---
+
+# Text block alignment
+
+If you only want a block of text to be changed you have to use a content class and square brackets.
+
+.center[Like this  
+for example.]
+
+.bottom.right[Or here I am   
+completely on the right!]
+
+
+---
+
+
