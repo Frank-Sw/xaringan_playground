@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="author" content="Suzan Baert" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
-    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css/uo.css" rel="stylesheet" />
+    <link href="libs/remark-css/uo-fonts.css" rel="stylesheet" />
   </head>
   <body>
     <textarea id="source">
@@ -120,8 +121,24 @@ For non r clode blocks, putting a * in front of the line will highlight that lin
 
 ```r
 a &lt;- 1
-*b &lt;- 2
+*b &lt;- 2 
 ```
+
+
+---
+
+# Changing themes
+
+This is how the slide looks with the new theme!
+
++ bullet 1
++ bullet 2
+
+---
+
+class: inverse, center, middle
+
+# Changing themes
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
@@ -130,7 +147,8 @@ a &lt;- 1
 "navigation": {
 "click": true
 },
-"countIncrementalSlides": true
+"countIncrementalSlides": false,
+"slideNumberFormat": "%current%"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));

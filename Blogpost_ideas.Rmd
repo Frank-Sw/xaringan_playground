@@ -73,7 +73,10 @@ naming a slide can be useful when you want to link back to a specific slide. Aut
 
 
 # Highlight: 
-For non-r code bocks, star will highlight
+use #<< or {{ }} in your R code
+
+If you want to highlight just a chunk:
+https://stackoverflow.com/questions/52016911/highlight-selection-of-code-in-xaringan
 
 
 

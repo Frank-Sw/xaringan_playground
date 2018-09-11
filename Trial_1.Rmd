@@ -4,11 +4,13 @@ author: "Suzan Baert"
 output:
   xaringan::moon_reader:
     lib_dir: libs
+    css: [default, uo, uo-fonts]
     nature:
       highlightStyle: github
       highlightLines: true
       navigation: {click: true}
       countIncrementalSlides: false 
+      slideNumberFormat: "%current%"
 ---
 
 ```{r setup, include=FALSE}
@@ -115,8 +117,24 @@ For non r clode blocks, putting a * in front of the line will highlight that lin
 
 ```{r}
 a <- 1
-b <- 2 #<<
+{{b <- 2 }}
 
 ```
+
+
+---
+
+# Changing themes
+
+This is how the slide looks with the new theme!
+
++ bullet 1
++ bullet 2
+
+---
+
+class: inverse, center, middle
+
+# Changing themes
 
 

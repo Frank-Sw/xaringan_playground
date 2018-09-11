@@ -1,0 +1,30 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I made my very first Xaringan presentation two weeks ago. Of course I didn't take my time to learn it slowly and without pressure. No - I decided to swap to  Xaringan just before a talk at satRdays Amsterdam. I had a lot of code chunks and normal ioslides only showed a fraction of the code without giving me a lot of flexibility, and copy pasting snippets wasn't really what I wanted to do.
+
+So Xaringan it was.  
+There is a lot of information spread about Xaringan, many brilliant resources I would advice you to browse through, but preferably not just before you have to head out and give a talk...
+
+
+
+# Getting started
+
+Installing xaringan
+
+
+Go to New > R Markdown > from Template > Ninja presentation {xaringan}
+
+The template you get started with already contains a lot of information on everything you can do. And still, if you're just starting out, I would advice you to delete
+
+
+
+
+
+No panic - just wait...
