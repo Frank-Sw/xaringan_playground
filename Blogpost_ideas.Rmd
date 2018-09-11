@@ -9,6 +9,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
+# What does the current yaml mean?
+
+---
+output:
+  xaringan::moon_reader:  #using xaringan moon_reader to render the slides
+    lib_dir: libs  #in what folder it should put the default css sheets
+    nature: # a list of configurations remarkJS will use to render the slides
+      highlightStyle: github #this can be changed to other "looks" 
+      highlightLines: true #the ability to hightlight specific code lines
+      countIncrementalSlides: false # whether you want objects that appear on slides (separated by --) to count as a new slide or within one slide
+
+
+Other looks of highlightstyles: (https://github.com/gnab/remark/wiki/Configuration#highlighting)
+
+
 # Getting rid of the default coverpage
 
 The default cover page takes 
@@ -54,3 +69,30 @@ If you only want to change a block of text, you can use content classes.
 # naming a slide
 
 naming a slide can be useful when you want to link back to a specific slide. Automatically they get numbered but as we all know: numbers can change, a name usually doesnt.
+
+
+
+# Highlight: 
+For non-r code bocks, star will highlight
+
+
+
+# click through your slidedecks!
+set navigation element
+
+---
+title: "Getting more out of dplyr"
+author: "Suzan Baert"
+date: "Sept 1st, 2018"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: monokai
+      highlightLines: true
+      navigation: {click: true}
+      countIncrementalSlides: false
+---
+
+
+Prsentation mode

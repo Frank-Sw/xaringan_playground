@@ -1,14 +1,14 @@
 ---
-title: "Getting more out of dplyr"
+title: "Getting more out of Xaringan"
 author: "Suzan Baert"
-date: "Sept 1st, 2018"
 output:
   xaringan::moon_reader:
     lib_dir: libs
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      navigation: {click: true}
+      countIncrementalSlides: false 
 ---
 
 ```{r setup, include=FALSE}
@@ -46,8 +46,12 @@ background-position: 0% 0%
 There is another way though:  
 This will add an image inline: ![](images/database_small.png)
 
+--
+
 Or you can add them using the content classes:  
 .left[![](images/database_small.png)]
+
+--
 
 And even add multiple more: 
 .center[![](images/database_small.png) ![](images/cloud_small.png) ![](images/graph_small.png)]
@@ -103,3 +107,16 @@ Giving a slide a name can be easy within the HTML afterwards: you can refer to i
 
 
 ---
+
+# Highlight lines
+
+For non r clode blocks, putting a * in front of the line will highlight that line
+* bit can i highloight somethin ghere?
+
+```{r}
+a <- 1
+b <- 2 #<<
+
+```
+
+

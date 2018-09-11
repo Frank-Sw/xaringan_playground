@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Getting more out of dplyr</title>
+    <title>Getting more out of Xaringan</title>
     <meta charset="utf-8">
     <meta name="author" content="Suzan Baert" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -11,9 +11,8 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Getting more out of dplyr
+# Getting more out of Xaringan
 ### Suzan Baert
-### Sept 1st, 2018
 
 ---
 
@@ -51,8 +50,12 @@ background-position: 0% 0%
 There is another way though:  
 This will add an image inline: ![](images/database_small.png)
 
+--
+
 Or you can add them using the content classes:  
 .left[![](images/database_small.png)]
+
+--
 
 And even add multiple more: 
 .center[![](images/database_small.png) ![](images/cloud_small.png) ![](images/graph_small.png)]
@@ -109,32 +112,25 @@ Giving a slide a name can be easy within the HTML afterwards: you can refer to i
 
 ---
 
-layout: true
+# Highlight lines
 
-background-image: url(images/pencil.jpg)
-background-size: cover
-
-
----
-
-# A new chapter heading
-
-Some text
+For non r clode blocks, putting a * in front of the line will highlight that line
+* bit can i highloight somethin ghere?
 
 
----
-
-# Which gets repeated here
-
-Some more text
-
----
+```r
+a &lt;- 1
+*b &lt;- 2
+```
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": false
+"navigation": {
+"click": true
+},
+"countIncrementalSlides": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
