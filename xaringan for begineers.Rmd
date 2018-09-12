@@ -38,32 +38,36 @@ Below the YAML is a large presentation on Xaringan made by Yihui. It contains a 
 
 ### Making your first slides
 
-The basic rules of slide-making
+The basic rules of slide-making:
 - Different slides are separated by three dashes.
-- Following traditional markdown language: titles of different sizes are indicated with # for header1, ## for header2 and ### for header3. 
+- The text content of the slides follows traditional markdown formatting with #, ##, ### indicating different header levels.
+
 
 
 ```
 # Title slide 1
 
-Content slide 1
-Content slide 1
+Content slide 1  
+More content slide 1
 
 
 ---
 
 # Title slide 2
 
-Content slide 2
-content slide 2
+Content slide 2  
+More content slide 2
 
 ```
 
 
-You can make the usual bullet lists, and you can make it appear one by one. The idea of *incremental slides*
+You can make the usual markdown bullet lists.
+And you make incremental slides (i.e. slide content appearing block by block rather than in one go) by adding two dashes `--` where you want to 'click'. 
+In the below example, each item of a bullet list will appear one by one.
 
 
 ```
+---
 
 # Title
 
@@ -77,12 +81,96 @@ You can make the usual bullet lists, and you can make it appear one by one. The 
 
 + Content I want to see added after clicking a second time
 
+---
+
 ```
 
 
 
 ### Adding images
 
-Option 1: using background images
+Adding images makes the presentation a lot less dry, and there are a few ways to add images.
 
+
+#### Option 1: using background images
+
+One of the easiest ways is to use `background-image`:  
+At the very top of your slide (before any class indications)
+
+The advantage of using `background-image` is that's very flexible: you can make your image full slide or small, and you have a lot of flexibility on the position of your image as well. 
+
+By default, your image is put in the center of the slide and maintains the original size.
+
+
+```
+---
+
+background-image: url(images/network.jpg)
+
+# Title
+
+Slide content
+
+---
+
+```
+
+For a 'real' background image, the intent is usually to fill the full slide. You can set the `background-dize: cover` to achieve this. Any titles or text you add will be written on top. You might want to change the alignment of the text to have it sit left center. How to do this will be explained below.
+
+
+```
+---
+
+background-image: url(images/bulb.jpg)
+background-size: cover
+
+
+# Background-image
+
+
+---
+
+```
+
+
+
+
+For other images, size and position can be modified until you have what you want: 
++ To adapt the size: you can add a `background-size` argument
++ To adjust the position you add first the horizontal position, then the vertical position.
+
+```
+---
+
+background-image: url(images/network_medium.png)
+background-size: 100px
+background-position: 0% 0%
+
+
+# Background-image
+
+Slide content
+
+---
+```
+
+> Add examples on different positions
+
+
+If you want more than one image in the background-image way, you can add multiple images via a comma:
+
+```
+---
+
+background-image: url(images/network_medium.png), url(images/cloud.png)
+background-size: 100px, 100px
+background-position: 10% 90%, 30% 90%
+
+# Two background images
+
+Slide content
+
+---
+
+```
 
