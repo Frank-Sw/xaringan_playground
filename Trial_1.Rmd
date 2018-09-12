@@ -4,13 +4,13 @@ author: "Suzan Baert"
 output:
   xaringan::moon_reader:
     lib_dir: libs
-    css: [default, uo, uo-fonts]
+    css: [default, metropolis, metropolis-fonts]
     nature:
       highlightStyle: github
       highlightLines: true
       navigation: {click: true}
       countIncrementalSlides: false 
-      slideNumberFormat: "%current%"
+      slideNumberFormat: ""
 ---
 
 ```{r setup, include=FALSE}

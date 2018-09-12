@@ -10,21 +10,79 @@ knitr::opts_chunk$set(echo = TRUE)
 I made my very first Xaringan presentation two weeks ago. Of course I didn't take my time to learn it slowly and without pressure. No - I decided to swap to  Xaringan just before a talk at satRdays Amsterdam. I had a lot of code chunks and normal ioslides only showed a fraction of the code without giving me a lot of flexibility, and copy pasting snippets wasn't really what I wanted to do.
 
 So Xaringan it was.  
-There is a lot of information spread about Xaringan, many brilliant resources I would advice you to browse through, but preferably not just before you have to head out and give a talk...
+There is a lot of information about Xaringan: wiki's, blog posts (see resources below). Many of these resources are brilliant,and I would advice to browse through them as well. However most people will likely be like me: you don't start on Xaringan when you have no slides to make, you start when you are busy with them and having to browse through many resources that often have beginners-and advanced things through each other is not so easy. I had 8 tabs open with examples and every time i wanted to do something  
 
+These blog posts want to build on that material. This contain the version of what I would have wanted to see: the essentials first, some easy tricks
+So this is the version I would have wanted to see: the essentials first, some easy tricks, less experimentation needed because
+
+I assume that you know the basics of markdown. If not, you might want to experiment with traditional Rmarkdown first... Or continue here: ....
+
+
+<br>
 
 
 # Getting started
 
-Installing xaringan
+### Installing xaringan
 
 
 Go to New > R Markdown > from Template > Ninja presentation {xaringan}
 
-The template you get started with already contains a lot of information on everything you can do. And still, if you're just starting out, I would advice you to delete
+
+At the very top in the YAML header, change the title, author date, but leave everything else for now (we'll get to YAML options later).
+Below the YAML is a large presentation on Xaringan made by Yihui. It contains a ton of information on everything you do. And I would advice to look through it at some point, but if this is your first xaringan my advice would be to delete everything below the first code chunk. Because a lot of info has the power to confuse as well...
 
 
 
 
 
-No panic - just wait...
+### Making your first slides
+
+The basic rules of slide-making
+- Different slides are separated by three dashes.
+- Following traditional markdown language: titles of different sizes are indicated with # for header1, ## for header2 and ### for header3. 
+
+
+```
+# Title slide 1
+
+Content slide 1
+Content slide 1
+
+
+---
+
+# Title slide 2
+
+Content slide 2
+content slide 2
+
+```
+
+
+You can make the usual bullet lists, and you can make it appear one by one. The idea of *incremental slides*
+
+
+```
+
+# Title
+
++ Content I want to see first
+
+--
+
++ Content I want to see added after clicking
+
+-- 
+
++ Content I want to see added after clicking a second time
+
+```
+
+
+
+### Adding images
+
+Option 1: using background images
+
+

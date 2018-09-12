@@ -16,14 +16,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Types of slide: usual and inverse
 
+- Alignment
+
 - Adding images
   - background image
   - markdown images
   - html
 
 - Adding icons and emoji (fontawesome and emo packages)
-
-- Alignment
 
 - Highlighting code
 
@@ -34,6 +34,7 @@ knitr::opts_chunk$set(echo = TRUE)
 - Built in formatting: changing code block theme
 
 
+
 ### Small tweaks
 
 - Changing to widescreen
@@ -42,11 +43,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Changing the way slide numbers appear
 
-- Getting rid of the slide numbers (? this is cSs)
+- Getting rid of the slide numbers ("" option)
 
-- Click to advance
+- Click to advance slides
 
--
+
 
 ### Presenting
 
@@ -54,7 +55,62 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - if this happens, no panic; just wait
 
----
+
+
+
+### Making your own template
+
+- Remembering these YAML instructions and where exactly to put them can be a challenge. If you have a set of preferences, --> template
+
+
+
+<br>
+<hr>
+<br>
 
 # Post 2: Making it your own
 
+Adding your own CSS to the mix
+
+
+### Modifying existing CSS classes
+
+- Fonts
+
+- Font colours
+
+- Background colours
+
+- Inline code
+
+- Highlighting code
+
+- Code chunks
+
+- Bigger slide area
+
+- Fonts bigger or smaller
+
+
+### Making new CSS classes
+
+- Handwritten example
+
+- Making a third type of slide beyond normal and inverse
+
+
+
+### Layouts? or keep for third one?
+
+
+
+
+
+
+
+
+General advice: you see something you like -> go and inspect how they have done it.
+
+- Folder structure
+
+- Inspecting other people's xaringans... see Julia Silge, Jennifer Thompson
