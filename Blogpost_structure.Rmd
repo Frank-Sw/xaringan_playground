@@ -1,0 +1,60 @@
+---
+title: "blog structure"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Post 1: for beginners
+
+### The essentials:
+- Installing xaringan
+
+- Making slides
+
+- Types of slide: usual and inverse
+
+- Adding images
+  - background image
+  - markdown images
+  - html
+
+- Adding icons and emoji (fontawesome and emo packages)
+
+- Alignment
+
+- Highlighting code
+
+- YAML explanations: what does it mean?
+
+- Built in formatting: swapping to metropolis or rladies themes. mention xariningthemer
+
+- Built in formatting: changing code block theme
+
+
+### Small tweaks
+
+- Changing to widescreen
+
+- Getting rid of the first slide
+
+- Changing the way slide numbers appear
+
+- Getting rid of the slide numbers (? this is cSs)
+
+- Click to advance
+
+-
+
+### Presenting
+
+- Clone and presenter mode
+
+- if this happens, no panic; just wait
+
+---
+
+# Post 2: Making it your own
+
