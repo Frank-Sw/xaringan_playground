@@ -174,3 +174,10 @@ Slide content
 
 ```
 
+
+#### Option 2: using markdown images
+
+Using background images gives you a lot of flexibility on size and position, but sometimes you need trial and error to get the position right. If you want your images in a certain spot versus text, this can be annoying - especially if you start changing the slide a bit more.
+
+One other way to add images is using traditional markdown. It will show images inline with your text, but the downside is that you have no control over size, so these images already need to be scaled correctly before adding.
+

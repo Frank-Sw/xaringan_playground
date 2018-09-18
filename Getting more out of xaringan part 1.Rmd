@@ -9,8 +9,8 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
+      navigation: {Click: true}
       countIncrementalSlides: false
-      slideNumberFormat: ""
 ---
 
 ```{r setup, include=FALSE}
@@ -105,3 +105,22 @@ background-position: 10% 90%, 30% 90%
 # Two background images
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+---
+
+# Markdown images
+
+![](images/network_small.png) Network considerations
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Cloud considerations ![](images/cloud_small.png) 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+---
+
+### Markdown images
+
+

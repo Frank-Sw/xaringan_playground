@@ -8,7 +8,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      navigation: {click: true}
+      navigation: [click: true]
       countIncrementalSlides: false 
       slideNumberFormat: ""
 ---
