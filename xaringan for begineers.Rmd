@@ -181,3 +181,16 @@ Using background images gives you a lot of flexibility on size and position, but
 
 One other way to add images is using traditional markdown. It will show images inline with your text, but the downside is that you have no control over size, so these images already need to be scaled correctly before adding.
 
+>> insert code and picture
+
+
+You have some control over position of the images, but not much. You can use the content classes to put an images left, center or right.
+
+>> insert code and picture
+
+
+#### Option 3: using HTML images
+
+If you want inline, but you also want control over the size of the pictures, you also have the option to leverage html pictures inside your slides:
+
+>> insert code and picture

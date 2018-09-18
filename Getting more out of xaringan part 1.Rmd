@@ -123,4 +123,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ### Markdown images
 
+.center[
+![](images/network_small.png)  
+### Part 1: Network considerations
 
+<br>
+
+![](images/cloud_small.png)  
+### Part 2: Cloud considerations
+]
+
+---
+
+### HTML images
+
+I will add a picture here:  
+<img src="images/database.png" width="100">
+
+And perhaps one more here:  
+<img src="images/cloud.png" width="100">
+
+---
