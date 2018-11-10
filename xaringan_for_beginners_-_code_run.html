@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Getting more out of Xaringan</title>
+    <title>Getting more out of xaringan Part 1</title>
     <meta charset="utf-8">
     <meta name="author" content="Suzan Baert" />
+    <meta name="date" content="2018-11-10" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
   </head>
@@ -11,10 +12,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Getting more out of Xaringan
-## Part 1
+# Getting more out of xaringan Part 1
+## ⚔<br>/ Part1
 ### Suzan Baert
-### Sept 2018
+### 2018-11-10
 
 ---
 
@@ -34,7 +35,6 @@ More content slide 1
 ### Subtitle
   
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
 
 
 ---
@@ -58,7 +58,9 @@ background-image: url(images/network_medium.png)
 
 # Background-image
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This is a slide with a background image without size or position settings.  
+It's in the middle of the slide and in its original size. 
+
 
 ---
 
@@ -66,7 +68,9 @@ background-image: url(images/bulb.jpg)
 background-size: cover
 
 
-# Background-image
+# Background-image 
+
+A slide with `background-size: cover`
 
 
 ---
@@ -93,34 +97,35 @@ background-position: 100% 0%
 
 Settings for this slide:
 + background-size: 100px
-background-position: 100% 0%
++ background-position: 100% 0%
 
 ---
 
 background-image: url(images/network_medium.png)
 background-size: 100px
-background-position: 20% 80%
+background-position: 10% 90%
 
 
 # Background-image
 
 Settings for this slide:
 + background-size: 100px
-background-position: 20% 80%
++ background-position: 10% 90%
 
 
 ---
 
 background-image: url(images/network_medium.png)
 background-size: 100px
-background-position: 100% 20%
+background-position: 60% 25%
 
 
 # Background-image
 
 Settings for this slide:
 + background-size: 100px
-background-position: 100% 20%
++ background-position: 60% 25%
+
 
 ---
 
@@ -130,8 +135,21 @@ background-position: 10% 90%, 30% 90%
 
 # Two background images
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+background-image: url(images/network_medium.png), url(images/cloud.png)  
+background-size: 100px, 100px  
+background-position: 10% 90%, 30% 90%
 
+---
+
+background-image: url(images/network_medium.png), url(images/cloud.png), url(images/database.png)
+background-size: 100px, 100px, 100px
+background-position: 10% 90%, 30% 90%, 55% 90%
+
+# Three background images
+
+background-image: url(images/network_medium.png), url(images/cloud.png), url(images/database.png)  
+background-size: 100px, 100px, 100px  
+background-position: 10% 90%, 30% 90%, 55% 90%
 
 ---
 
@@ -147,40 +165,47 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ---
 
-### Markdown images
+class: middle
 
 .center[
 ![](images/network_small.png)  
-### Part 1: Network considerations
+## Part 1: Network considerations
 
 &lt;br&gt;
 
 ![](images/cloud_small.png)  
-### Part 2: Cloud considerations
+## Part 2: Cloud considerations
 ]
-
-
-
 
 
 ---
 
-### HTML images
+# HTML images
 
-I will add a picture right here: &lt;img src="images/database.png" width="100"&gt;
+I will add a picture right here:  
+&lt;img src="images/database.png" width="100"&gt; 
 
 And perhaps one more here:  
 &lt;img src="images/cloud.png" width="100"&gt;
 
 ---
+
+class: middle
+
+.center[
+&lt;img src="images/database.png" width="150"&gt; 
+## Part 1: Network considerations
+
+&lt;br&gt;
+
+&lt;img src="images/cloud.png" width="150"&gt; 
+## Part 2: Cloud considerations
+]
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
-"navigation": {
-"Click": true
-},
 "countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {

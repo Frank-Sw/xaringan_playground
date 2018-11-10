@@ -7,15 +7,15 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-I made my very first Xaringan presentation two weeks ago. Of course I didn't take my time to learn it slowly and without pressure. No - I decided to swap to  Xaringan just before a talk at satRdays Amsterdam. I had a lot of code chunks and normal ioslides only showed a fraction of the code without giving me a lot of flexibility, and copy pasting snippets wasn't really what I wanted to do.
+I made my very first Xaringan presentation a few months ago. Of course I didn't take the time to learn it slowly and without pressure. No, I decided to swap to  Xaringan just before a talk at satRdays Amsterdam. I had a lot of code chunks and normal Rmarkdown slides only showed a fraction of the code without giving me a lot of flexibility. The other option copy pasting snippets to Powerpoint wasn't really what I wanted to do.  
 
 So Xaringan it was.  
-There is a lot of information about Xaringan: wiki's, blog posts (see resources below). Many of these resources are brilliant,and I would advice to browse through them as well. However most people will likely be like me: you don't start on Xaringan when you have no slides to make, you start when you are busy with them and having to browse through many resources that often have beginners-and advanced things through each other is not so easy. I had 8 tabs open with examples and every time i wanted to do something  
+There is a lot of information about Xaringan: wiki's, blog posts (see resources below). Many of these resources are brilliant, and I would advice everyone to browse through them as well. However most people will likely be like me: you don't start on Xaringan when you have no slides to make, you start when you are busy with them and having to browse through many resources that often have beginners and advanced things mixed throughout is not so easy. I had 8 tabs open with examples and every time i wanted to do something I went browsing through all of them. 
 
-These blog posts want to build on that material. This contain the version of what I would have wanted to see: the essentials first, some easy tricks
-So this is the version I would have wanted to see: the essentials first, some easy tricks, less experimentation needed because
+These blog posts want to build on that material. This contain the version of what I would have wanted to see: the essentials and some easy tricks that would have enabled me to focus on content rather than form, and build up more slowly once I knew what I was doing.
 
-I assume that you know the basics of markdown. If not, you might want to experiment with traditional Rmarkdown first... Or continue here: ....
+For these tutorials, I assume that you know the basics of markdown/R Markdown. If that is not the case, you might want to first learn that. The [R Markdown website is a good start](https://rmarkdown.rstudio.com/lesson-1.html).
+
 
 
 <br>
@@ -25,12 +25,19 @@ I assume that you know the basics of markdown. If not, you might want to experim
 
 ### Installing xaringan
 
+To install the latest CRAN version: `install.packages("xaringan")`
+You can also install the latest development version from github: `devtools::install_github('yihui/xaringan')`
+
+
+
+### Your first xaringan presentation:
 
 Go to New > R Markdown > from Template > Ninja presentation {xaringan}
 
-
 At the very top in the YAML header, change the title, author date, but leave everything else for now (we'll get to YAML options later).
 Below the YAML is a large presentation on Xaringan made by Yihui. It contains a ton of information on everything you do. And I would advice to look through it at some point, but if this is your first xaringan my advice would be to delete everything below the first code chunk. Because a lot of info has the power to confuse as well...
+
+![](post1_images/1_Starting_template_mod.png)
 
 
 
@@ -55,14 +62,17 @@ More content slide 1
 
 # Title slide 2
 
-Content slide 2  
-More content slide 2
+### Subtitle   
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 ```
 
+![](post1_images/slide1_2.png)
+
+
 
 You can make the usual markdown bullet lists.
-And you make incremental slides (i.e. slide content appearing block by block rather than in one go) by adding two dashes `--` where you want to 'click'. 
+And you make slides with 'incremental' slides (i.e. slide content appearing block by block rather than in one go) by adding two dashes `--` where you want to 'click'. 
 In the below example, each item of a bullet list will appear one by one.
 
 
@@ -77,7 +87,7 @@ In the below example, each item of a bullet list will appear one by one.
 
 + Content I want to see added after clicking
 
--- 
+--
 
 + Content I want to see added after clicking a second time
 
@@ -85,11 +95,14 @@ In the below example, each item of a bullet list will appear one by one.
 
 ```
 
+![](post1_images/slide3.png)
+
+<br>
 
 
 ### Adding images
 
-Adding images makes the presentation a lot less dry, and there are a few ways to add images.
+Adding images is a must for presentations. And there are a few options. 
 
 
 #### Option 1: using background images
@@ -99,7 +112,7 @@ At the very top of your slide (before any class indications)
 
 The advantage of using `background-image` is that's very flexible: you can make your image full slide or small, and you have a lot of flexibility on the position of your image as well. 
 
-By default, your image is put in the center of the slide and maintains the original size.
+By default, your image is put in the center of the slide and maintains its original size.
 
 
 ```
@@ -124,20 +137,22 @@ For a 'real' background image, the intent is usually to fill the full slide. You
 background-image: url(images/bulb.jpg)
 background-size: cover
 
-
 # Background-image
 
+Slide content
 
 ---
 
 ```
 
 
+![](post1_images/slides4_5.png)
+
 
 
 For other images, size and position can be modified until you have what you want: 
-+ To adapt the size: you can add a `background-size` argument
-+ To adjust the position you add first the horizontal position, then the vertical position.
++ To adapt the size: you can add a size in pixels to the `background-size` argument
++ To adjust the position, you add first the horizontal position, then the vertical position.
 
 ```
 ---
@@ -154,10 +169,10 @@ Slide content
 ---
 ```
 
-> Add examples on different positions
+![](post1_images/slide6_9.png)
 
 
-If you want more than one image in the background-image way, you can add multiple images via a comma:
+If you want more than one image in the background-image way, you can add multiple images with a comma:
 
 ```
 ---
@@ -174,23 +189,71 @@ Slide content
 
 ```
 
+![](post1_images/slide10_11.png)
+
+
+<br>
 
 #### Option 2: using markdown images
 
-Using background images gives you a lot of flexibility on size and position, but sometimes you need trial and error to get the position right. If you want your images in a certain spot versus text, this can be annoying - especially if you start changing the slide a bit more.
+Using background images gives you a lot of flexibility on size and position, but sometimes you need trial and error to get the position right. If you want your images in a certain spot versus text, this can be annoying - especially if you're editing slides until the end.
 
 One other way to add images is using traditional markdown. It will show images inline with your text, but the downside is that you have no control over size, so these images already need to be scaled correctly before adding.
 
->> insert code and picture
+
+```
+# Markdown images
+
+### Network considerations ![](images/network_small.png) 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+### Cloud considerations ![](images/cloud_small.png) 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+``` 
 
 
-You have some control over position of the images, but not much. You can use the content classes to put an images left, center or right.
+You have some control over position of the images, but not much. You can use the content classes to put an images left, center or right. (see later)  
 
->> insert code and picture
+```
+---
+class: middle
 
+.center[
+![](images/network_small.png)  
+## Part 1: Network considerations
+
+<br>
+
+![](images/cloud_small.png)  
+## Part 2: Cloud considerations
+]
+
+---
+
+```
+
+![](post1_images/slide12_13.png)
 
 #### Option 3: using HTML images
 
-If you want inline, but you also want control over the size of the pictures, you also have the option to leverage html pictures inside your slides:
+If you want inline, but you also want control over the size of the pictures, you also have the option to leverage HTML code inside your slides:
 
->> insert code and picture
+```
+---
+
+# HTML images
+
+I will add a picture right here:  
+<img src="images/database.png" width="100">
+
+And perhaps one more here:  
+<img src="images/cloud.png" width="100">
+
+---
+
+```
+
+![](post1_images/slide14_15.png)
