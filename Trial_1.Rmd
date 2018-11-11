@@ -10,7 +10,7 @@ output:
       highlightLines: true
       navigation: [click: true]
       countIncrementalSlides: false 
-      slideNumberFormat: ""
+      slideNumberFormat: "%current%"
 ---
 
 ```{r setup, include=FALSE}

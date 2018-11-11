@@ -25,7 +25,7 @@ For these tutorials, I assume that you know the basics of markdown/R Markdown. I
 
 ### Installing xaringan
 
-To install the latest CRAN version: `install.packages("xaringan")`
+To install the latest CRAN version: `install.packages("xaringan")`  
 You can also install the latest development version from github: `devtools::install_github('yihui/xaringan')`
 
 
@@ -35,13 +35,13 @@ You can also install the latest development version from github: `devtools::inst
 Go to New > R Markdown > from Template > Ninja presentation {xaringan}
 
 At the very top in the YAML header, change the title, author date, but leave everything else for now (we'll get to YAML options later).
-Below the YAML is a large presentation on Xaringan made by Yihui. It contains a ton of information on everything you do. And I would advice to look through it at some point, but if this is your first xaringan my advice would be to delete everything below the first code chunk. Because a lot of info has the power to confuse as well...
+Below the YAML is a large presentation on Xaringan made by Yihui. It contains a ton of information with a lot of fancy things you can do. I would advice to look through it at some point, but if this is your first xaringan my advice would be to delete everything below the first code chunk. Because a lot of info has the power to confuse as well...
 
 ![](post1_images/1_Starting_template_mod.png)
 
 
 
-
+<br>
 
 ### Making your first slides
 
@@ -71,8 +71,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 
-You can make the usual markdown bullet lists.
-And you make slides with 'incremental' slides (i.e. slide content appearing block by block rather than in one go) by adding two dashes `--` where you want to 'click'. 
+You can make the usual markdown bullet lists, using `+` signs to mark different bullets.
+You can also make your slides 'incremental - i.e. have the slide content appear block by block rather than in one go. You can do this by adding two dashes `--` where you want to 'click'. 
 In the below example, each item of a bullet list will appear one by one.
 
 
@@ -95,9 +95,67 @@ In the below example, each item of a bullet list will appear one by one.
 
 ```
 
-![](post1_images/slide3.png)
+![](post1_images/Slide3.png)
 
 <br>
+
+### Inverse slides
+
+Both the default and other built-in themes allow for two type of slides: the usual and inverse. Inverse slides typically have a dark background with light font, similar to the title slide. You can add an inverse slide anywhere you want by add `class: inverse` the the beginning of your slide.
+
+```
+---
+  
+class: inverse
+
+# Title
+
+Slide content
+
+---
+
+```
+
+<br>
+
+### Slide alignment
+
+Given that these inverse slides are often used as front pages of a section in your presentation, you might not want the default top-left aligned layout. The `class` argument accepts a set of different instructions on where text should be displayed. This will give you an inverse slide with the text centered and in the middle of your slide.  
+The `class: center, middle` arguments also work with regular slides.
+
+
+```
+---
+  
+class: inverse, center, middle
+
+# Title
+
+Slide content
+
+---
+```
+
+
+<br>
+
+### Aligning only specific content
+
+The above use of the `class` argument will change the appearance of the full slide. If you want to align only parts of your slides, you need to wrap it inside square brackets after specifying what format class you want.  
+Example to center align something, you can add the text to center between `.center[text]`. 
+
+Other built-in classes 
+
+
+
+
+
+
+
+
+
+<br>
+<hr>
 
 
 ### Adding images
@@ -146,7 +204,7 @@ Slide content
 ```
 
 
-![](post1_images/slides4_5.png)
+![](post1_images/slide4_5.png)
 
 
 
@@ -257,3 +315,27 @@ And perhaps one more here:
 ```
 
 ![](post1_images/slide14_15.png)
+
+
+
+<br>
+
+### Slide numbers
+
+There are people who love slide numbers. I'm not one of them. 
+Luckily there are ways to control slide numbers, and there right in the YAML header.
+
+The default is is showing both the current slide and the total number of slides. You can add a `slideNumberFormat` argument inside the `nature` argument.   
++ To display only the current slide number, you can add `slideNumberFormat: "%current%"`
++ To display no slide number, you can add `slideNumberFormat: ""`
+
+```
+title: "Getting more out of Xaringan"
+author: "Suzan Baert"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+```

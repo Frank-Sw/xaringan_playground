@@ -10,15 +10,15 @@ knitr::opts_chunk$set(echo = TRUE)
 # Post 1: for beginners
 
 ### The essentials:
-- Installing xaringan
+- Installing xaringan - done
 
-- Making slides
+- Making slides - done
 
-- Types of slide: usual and inverse
+- Types of slide: usual and inverse - done
 
-- Alignment
+- Alignment - ongoing
 
-- Adding images
+- Adding images - done
   - background image
   - markdown images
   - html

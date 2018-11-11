@@ -9,7 +9,7 @@ output:
     nature:
       highlightStyle: github
       highlightLines: true
-      countIncrementalSlides: false
+      slideNumberFormat: ""
 ---
 
 ```{r setup, include=FALSE}
@@ -44,6 +44,42 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 --
 
 + Content I want to see added after clicking a second time
+
+---
+
+class: inverse
+
+# Normal inverse slide
+
+Settings for this slide: `class: inverse` 
+
+
+---
+
+class: inverse, center
+
+# Inverse slide with alignment
+
+Settings for this slide: `class: inverse, center`
+
+
+---
+
+class: inverse, middle
+
+# Inverse slide with alignment
+
+Settings for this slide: `class: inverse, middle` 
+
+
+---
+
+class: inverse, middle, center
+
+# Inverse slide with alignment
+
+Settings for this slide: `class: inverse, middle, center` 
+
 
 ---
 
@@ -195,3 +231,7 @@ class: middle
 <img src="images/cloud.png" width="150"> 
 ## Part 2: Cloud considerations
 ]
+
+---
+
+
