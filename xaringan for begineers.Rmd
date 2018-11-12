@@ -7,12 +7,17 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-I made my very first Xaringan presentation a few months ago. Of course I didn't take the time to learn it slowly and without pressure. No, I decided to swap to  Xaringan just before a talk at satRdays Amsterdam. I had a lot of code chunks and normal Rmarkdown slides only showed a fraction of the code without giving me a lot of flexibility. The other option copy pasting snippets to Powerpoint wasn't really what I wanted to do.  
+This is the first part in a series of Xaringan tutorials. Xaringan is a package by Yihui Xie that allows you to make slides in R (with R code and output) in a flexible way. This first post will introduce the basics of xaringan. The second one will introduce some easy tweaks to make it your own, and the final one covers CSS to fully (or partially) personalize your slides.
 
-So Xaringan it was.  
-There is a lot of information about Xaringan: wiki's, blog posts (see resources below). Many of these resources are brilliant, and I would advice everyone to browse through them as well. However most people will likely be like me: you don't start on Xaringan when you have no slides to make, you start when you are busy with them and having to browse through many resources that often have beginners and advanced things mixed throughout is not so easy. I had 8 tabs open with examples and every time i wanted to do something I went browsing through all of them. 
+<!--more-->
 
-These blog posts want to build on that material. This contain the version of what I would have wanted to see: the essentials and some easy tricks that would have enabled me to focus on content rather than form, and build up more slowly once I knew what I was doing.
+
+I made my very first Xaringan presentation a few months ago. Of course I didn't take the time to learn it without a deadline looming over me. No, I decided to swap to Xaringan just days  before a talk at satRdays Amsterdam. I had a lot of code chunks and normal Rmarkdown slides only showed a fraction of the code and gave me no flexibility to change the margins, or decrease the font size. The other option would have been to copy paste dozens of snippets from R to Powerpoint, which wasn't really what I wanted to do either.
+
+So Xaringan it was - I finally made the jump!  
+There is a lot of information out there about Xaringan: wiki's, blog posts (see resources below). Many of these resources are brilliant, and I would advice everyone to browse through them as well. However most people will likely be like me: you don't start on Xaringan when you have no slides to make, you start when you are busy with them and having to browse through many resources that often have beginners and advanced things mixed throughout is not so easy. I had 8 tabs open with examples and every time i wanted to do something I went browsing through all of them. It shouldn't not have taken me that long to figure out how to have an image full siwe.
+
+These blog posts want to build on that material. This contain the version of what I would have wanted to see: the essentials first, t that would have enabled me to focus on content rather than form, and build up more slowly once I knew what I was doing.
 
 For these tutorials, I assume that you know the basics of markdown/R Markdown. If that is not the case, you might want to first learn that. The [R Markdown website is a good start](https://rmarkdown.rstudio.com/lesson-1.html).
 
@@ -121,7 +126,17 @@ Slide content
 ### Slide alignment
 
 Given that these inverse slides are often used as front pages of a section in your presentation, you might not want the default top-left aligned layout. The `class` argument accepts a set of different instructions on where text should be displayed. This will give you an inverse slide with the text centered and in the middle of your slide.  
-The `class: center, middle` arguments also work with regular slides.
+Of course, the `class: center, middle` argument also works with regular slides.
+
+**Horizontal alignment**: left alignment is default and does not need to be specified
++ `class: center`: centers everything to the center of the slide horizontally
++ `class: right`: right alignment for the entire slide 
+
+
+**Vertical alignment**: top alignment is default and does not need to be specified
++ `class: middle`: centers everything to the center of the slide vertically
++ `class: bottom`: right alignment for the entire slide 
+
 
 
 ```
@@ -141,17 +156,28 @@ Slide content
 
 ### Aligning only specific content
 
-The above use of the `class` argument will change the appearance of the full slide. If you want to align only parts of your slides, you need to wrap it inside square brackets after specifying what format class you want.  
-Example to center align something, you can add the text to center between `.center[text]`. 
-
-Other built-in classes 
+The above use of the `class` argument will change the appearance of the entire slide. If you want to align only parts of your slides, you can use content classes, which uses a `.class[your content]` syntax. For instance to center align just a sentence you write `.center[text you want centered]`. The built-in classes include `left[]`, `.center[]` and `.right[]`, and there is a specific `.footnote[]` class as well. You can also make your own classes using CSS (see part 3). To note: I added breaks in between alineas to allow some white breathing space.
 
 
+```
+---
+  
+# Title
+
+<br>
+
+.center[### "You should laugh every moment you live,  
+### for you’ll find it decidedly difficult afterwards.” ]
 
 
+<br><br>
 
+.right[Joe Abercrombie]
 
+.footnote[*Quote taken from his wonderful book "Best Served Cold"*]
 
+---
+```
 
 
 <br>

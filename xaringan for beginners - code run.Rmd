@@ -51,16 +51,7 @@ class: inverse
 
 # Normal inverse slide
 
-Settings for this slide: `class: inverse` 
-
-
----
-
-class: inverse, center
-
-# Inverse slide with alignment
-
-Settings for this slide: `class: inverse, center`
+Slide with `class: inverse` 
 
 
 ---
@@ -69,19 +60,53 @@ class: inverse, middle
 
 # Inverse slide with alignment
 
-Settings for this slide: `class: inverse, middle` 
+Slide with `class: inverse, middle` 
 
 
 ---
 
-class: inverse, middle, center
+class: right, middle
 
 # Inverse slide with alignment
 
-Settings for this slide: `class: inverse, middle, center` 
+Slide with `class: right, middle` 
 
 
 ---
+
+class: left, bottom
+
+# Inverse slide with alignment
+
+Slide with `class: left, bottom` 
+
+---
+
+# Title
+
+<br>
+
+.center[### "You should laugh every moment you live,  
+### for you’ll find it decidedly difficult afterwards.” ]
+
+<br><br>
+
+.right[Joe Abercrombie]
+
+.footnote[*Quote taken from his wonderful book "Best Served Cold"*]
+
+
+
+---
+
+
+
+
+
+
+
+---
+
 
 background-image: url(images/network_medium.png)
 

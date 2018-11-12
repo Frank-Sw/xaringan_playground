@@ -16,13 +16,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Types of slide: usual and inverse - done
 
-- Alignment - ongoing
+- Alignment - done
 
 - Adding images - done
   - background image
   - markdown images
   - html
 
+
+
+### Presenting
+
+- Clone and presenter mode
+
+- if this happens, no panic; just wait
+
+
+
+---
+
+
+### Post 2: Small tweaks to make it your own (without css)
 - Adding icons and emoji (fontawesome and emo packages)
 
 - Highlighting code
@@ -32,6 +46,8 @@ knitr::opts_chunk$set(echo = TRUE)
 - Built in formatting: swapping to metropolis or rladies themes. mention xariningthemer
 
 - Built in formatting: changing code block theme
+
+- Layout
 
 
 
@@ -45,15 +61,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - Getting rid of the slide numbers ("" option)
 
-- Click to advance slides
 
 
 
-### Presenting
-
-- Clone and presenter mode
-
-- if this happens, no panic; just wait
 
 
 
@@ -68,7 +78,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <hr>
 <br>
 
-# Post 2: Making it your own
+# Post 3: Making it your own
 
 Adding your own CSS to the mix
 
